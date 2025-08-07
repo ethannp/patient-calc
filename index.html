@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Patient Calculator</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="main.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Patient Calculator</h1>
+            <table>
+                <tr>
+                    <td>Birthdate: </td>
+                    <td><input id="date" oninput="onChange()"></td>
+                </tr>
+                <tr>
+                    <td>Height: </td>
+                    <td><input id="feet" oninput="onChange()"><span>feet</span>
+                        <input id="inches" oninput="onChange()"
+                            required><span>inches</span></td>
+                </tr>
+                <tr>
+                    <td>Weight: </td>
+                    <td><input id="weight" oninput="onChange()"><span>lbs</span></td>
+                </tr>
+            </table>
+            
+            <hr>
+
+            <h2>Age: <span id="age"></span></p>
+            <h2>BMI: <span id="bmi"></span></p>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url("SEGOEUI.TTF");
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+input {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+td {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#feet, #inches, #weight{
+    width: 50px;
+}
+
+
+table {
+    margin: auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+table span {
+    font-size: 14px;
+}

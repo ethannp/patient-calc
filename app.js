@@ -1,7 +1,7 @@
 function onChange() {
     try {
         let mdy = document.getElementById("date").value.split("/");
-        let bday = new Date(mdy[2], mdy[1]-1, mdy[0]);
+        let bday = new Date(mdy[2], mdy[0]-1, mdy[1]);
         let years = Math.floor(Math.abs(new Date() - bday)/31536000000);
         if (!Number.isInteger(years) || mdy.length != 3) {
             throw new Error();

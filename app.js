@@ -22,3 +22,8 @@ function onChange() {
         document.getElementById("bmi").innerHTML = "";
     }
 }
+
+function copy() {
+    navigator.clipboard.writeText("Text: \nEmail: \nPhone: \nTodo: ");
+    document.getElementsByTagName("button")[0].innerHTML = "Copied!";
+}
